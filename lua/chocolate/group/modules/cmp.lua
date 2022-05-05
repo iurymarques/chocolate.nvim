@@ -9,7 +9,7 @@ function M.get()
     CmpDocumentationBorder   = { fg = c.bg4, bg = c.bg },
 
     CmpItemAbbr              = { fg = c.fg1, },
-    CmpItemAbbrDeprecated    = { fg = util.darken(c.beige, 0.6, c.bg), strikethrough = true },
+    CmpItemAbbrDeprecated    = { fg = util.blend(c.beige, c.bg, 0.6), strikethrough = true },
     CmpItemAbbrMatch         = { fg = c.blue, },
     CmpItemAbbrMatchFuzzy    = { fg = c.blue, },
 

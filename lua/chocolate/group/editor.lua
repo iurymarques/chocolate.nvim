@@ -16,7 +16,7 @@ function M.get()
     Directory = { fg = c.blue },
     DiffAdd = { bg = util.blend(c.diff.add, c.bg, 0.2) },
     DiffChange = { bg = util.blend(c.diff.change, c.bg, 0.2) },
-    DiffDelete = { fg = util.blend(c.diff.delete, c.bg, 0.3), bg = util.blend(c.diff.delete, c.bg, 0.2) },
+    DiffDelete = { bg = util.blend(c.diff.delete, c.bg, 0.2) },
     DiffText = { bg = util.blend(c.diff.change, c.bg, 0.4) },
     EndOfBuffer = { fg = c.bg2 },
 

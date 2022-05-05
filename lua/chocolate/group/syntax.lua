@@ -1,11 +1,11 @@
 local c = require("chocolate.colors").get()
-local util = require("chocolate.util")
+local util = require "chocolate.util"
 
 local M = {}
 
 function M.get()
   return {
-    Comment = { fg = util.darken(c.beige, 0.6, c.bg), italic = true },
+    Comment = { fg = util.blend(c.beige, c.bg, 0.6), italic = true },
     Constant = { fg = c.orange },
     String = { fg = c.green },
     Character = { link = "String" },
@@ -15,6 +15,12 @@ function M.get()
 
     Identifier = { fg = c.fg },
     Function = { fg = c.blue },
+
+    PreProc = { fg = c.purple },
+    Include = { link = "PreProc" }, -- preprocessor #include
+    Define = { link = "PreProc" }, -- preprocessor #define
+    Macro = { link = "PreProc" }, -- same as Define
+    PreCondit = { link = "PreProc" }, -- preprocessor #if, #else, #endif, etc.
 
     Statement = { fg = c.red },
     Conditional = { fg = c.red },
