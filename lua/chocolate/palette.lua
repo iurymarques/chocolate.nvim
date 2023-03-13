@@ -1,6 +1,5 @@
-local util = require("chocolate.color_util")
-
-local color_palette = {
+--- @class ColorPalette
+local palette = {
   red = "#c65f5f",
   green = "#859e82",
   yellow = "#d9b27c",
@@ -23,10 +22,10 @@ local color_palette = {
   fg3 = "#d1c6b4",
   -- diff
   diff = {
-    add = "#3d3837",
-    change = "#3d3837",
-    delete = "#3d3837",
+    add = "#859e82",
+    change = "#d08b65",
+    delete = "#c65f5f",
   },
 }
 
-return color_palette
+return palette
